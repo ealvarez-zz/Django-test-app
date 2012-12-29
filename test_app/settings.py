@@ -1,6 +1,7 @@
+import dj_database_url
 # Django settings for test_app project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -151,3 +152,6 @@ LOGGING = {
         },
     }
 }
+
+# Parse database configuration from $DATABASE_URL
+DATABASES['default'] =  dj_database_url.config()
