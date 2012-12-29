@@ -1,7 +1,7 @@
 import dj_database_url
 # Django settings for test_app project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
